@@ -32,7 +32,7 @@ CDE将布局，组件，数据源进行的划分。
 
 对图形的点击绑定`click`事件，并进行如下操作  
 **1**. 传递参数  
-ajax异步加载实现，通过CDA文件获取  
+ajax异步加载实现，通过CDA文件获取\(参考[CDA Web API](cda-web-api.md)\)  
 **2**. 刷新关联图形  
 重新渲染Echarts图形，实现刷新功能
 
@@ -99,5 +99,11 @@ function BarTranslate(data,instance){
     });
     return option;
 }
+```
+
+### 外部封装初始化Chart
+
+```javascript
+
 ```
 
