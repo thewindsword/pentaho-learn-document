@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Pentaho Tutorial](README.md)
 * [介绍](jie-shao.md)
 * [目录](untitled-1.md)
 * [OLAP 基础知识](olap-ji-chu-zhi-shi.md)
