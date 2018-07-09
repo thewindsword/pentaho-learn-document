@@ -36,7 +36,7 @@ ajax异步加载实现，通过CDA文件获取\(参考[CDA Web API](cda-web-api.
 **2**. 刷新关联图形  
 重新渲染Echarts图形，实现刷新功能
 
-### 封装AJAX请求
+### AJAX请求
 
 通过指定CDA文件进行数据获取，构造函数如下：
 
@@ -61,7 +61,7 @@ function readJSONFile(url){
 }
 ```
 
-### 封装图形数据格式化
+### 数据格式化
 
 根据不同图形要求，将获取数据进行翻译，变成所需的格式，如下：
 
@@ -101,9 +101,21 @@ function BarTranslate(data,instance){
 }
 ```
 
-### 外部封装初始化Chart
+### 封装初始化Chart
 
 ```javascript
+/**
+* url: CDA数据来源
+* id: 挂载htmlObject
+* func: Options生成器
+*/
+function initCharts(url,id,func){
+    let resultJSON = readJSONFile(url).resultset;
+    const cartContainer = echarts.init(document.getElementById(id));
 
+    func(resultJSON,cartContainer)
+}
 ```
+
+### 
 
