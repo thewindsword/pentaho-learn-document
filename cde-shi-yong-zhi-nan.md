@@ -22,7 +22,12 @@ CDE将布局，组件，数据源进行的划分。
 
 获取：
 
-`Utils.getQueryParameter("paramName");`
+`// 获取查询语句参数  
+Utils.getQueryParameter("paramName");  
+// 获取path  
+Utils.getPathParameter(url);  
+// 获取url参数?paramfoo=bar  
+Utils.getURLParameters(sURL);`
 
 设置参数：
 
@@ -117,5 +122,12 @@ function initCharts(url,id,func){
 }
 ```
 
-### 
+## 导出文件的按钮组件
+
+Standard 》 Export Button Component  
+按钮文本：Label  
+导出数据源：Component Name指定组件的数据源  
+支持导出格式：xls，csv
+
+
 

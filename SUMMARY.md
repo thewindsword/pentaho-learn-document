@@ -8,4 +8,5 @@
 * [CDE 使用指南](cde-shi-yong-zhi-nan.md)
 * [BI Server REST](bi-server-rest.md)
 * [Spoon使用指南](spoon-shi-yong-zhi-nan.md)
+* [Report Designer 使用指南](report-designer-shi-yong-zhi-nan.md)
 
