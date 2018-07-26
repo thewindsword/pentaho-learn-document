@@ -12,7 +12,21 @@ postman: 复制登陆后对应的cookie到postman Cookies中
 
 `/repo/files/{pathId}/children?filter=FILES_FOLDERS&showHidden=true`
 
-用于浏览pathId下的所有文件/文件夹
+用于浏览pathId下的所有文件/文件夹，pathId分割为%3A
+
+## 文件下载
+
+```text
+/repo/files/{pathId}/download
+```
+
+用于下载pathId对应的文件，pathId分割为:
+
+## 文件删除
+
+
+
+## 文件上传/新增
 
 
 
